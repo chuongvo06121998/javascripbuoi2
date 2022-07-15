@@ -37,5 +37,12 @@ document.getElementById("btnDienTich").onclick = function(){
     // ketQua += "<p>" +nhan + "</p>";
     document.getElementById("thongDienTich").innerHTML = ketQua;
 
-} 
+} //bai 5
+document.getElementById("btnTinhTong").onclick = function(){
+    var soThuc =  document.getElementById("tongSoThuc").value*1;
+    var num1 = soThuc % 10;
+    var num2 = Math.floor (soThuc / 10 );
+   var totalSo = num1 + num2 ;
+   document.getElementById("thongTinhTong").innerHTML = totalSo;
+}
 
